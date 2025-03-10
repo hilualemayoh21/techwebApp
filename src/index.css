@@ -1,0 +1,49 @@
+@import "tailwindcss";
+#curve{
+  fill:transparent;
+}
+.text{
+  fill:white;
+ 
+  transform-origin:  50% 50%;
+  animation:rotate 15s  linear infinite;
+  
+}
+@keyframes rotate{
+  from{
+    transform:rotateZ(0deg);
+  }
+  to{
+    transform: rotateZ(360deg);
+  }
+}
+/* index.css or any global CSS file */
+/* index.css or any global CSS file */
+/* index.css or any global CSS file */
+@keyframes shake-both {
+
+  0%,
+  100% {
+    transform: translateX(0) translateY(0);
+    /* No movement */
+  }
+
+  25% {
+    transform: translateX(-10px) translateY(-10px);
+    /* Move left and up */
+  }
+
+  50% {
+    transform: translateX(10px) translateY(10px);
+    /* Move right and down */
+  }
+
+  75% {
+    transform: translateX(-10px) translateY(-10px);
+    /* Move left and up again */
+  }
+}
+
+.animate-shake-both {
+  animation: shake-both 0.7s ease-in-out;
+}
