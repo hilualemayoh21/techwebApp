@@ -7,7 +7,7 @@ import programmerimage from "../assets/Images/programmerimage.jpg"
 
 function Testimonial() {
   return (
-    <div className="bg-[#e5e3e8] mt-[4em] mb-[2em] rounded-xl lg:px-[3em]  md:py-[6em]  md:px-[12%] px-[16%] lg:py-[3em] py-[3em]">
+    <div className="bg-[#e5e3e8] mt-[4em] mb-[2em] rounded-xl  md:px-[12%] lg:px-[3em]  md:py-[6em]  px-[16%] lg:py-[3em] py-[3em]">
       <h5 className="pb-2 text-orange-400 font-bold md:px-[2em]">Testimonial</h5>
       <div className="flex justify-between items-center md:px-[2em]">
         <h3 className="md:text-4xl text-[12px] leading-tight">
@@ -17,7 +17,7 @@ function Testimonial() {
           Explore Work
         </button>
       </div>
-      <div className="flex md:flex-row flex-col md:gap-9 lg:gap-8 gap-8lg:mx-[8em] md:mx-[4%]">
+      <div className="flex md:flex-row flex-col md:gap-9 lg:gap-8 gap-8 lg:mx-[8em] md:mx-[4%]">
         {/* cart1 */}
         <div className="flex flex-col mt-8 lg:w-[280px] w-[230px] md:[210px]">
           <div className="flex gap-4 h-[130px] lg:h-[130px] md:h-[140px] bg-[#cdcbd9]  rounded-lg">

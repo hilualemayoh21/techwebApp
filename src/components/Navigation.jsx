@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import logo from "../assets/Images/logo.jpg";
 import HamburgerIcon from "hamburger-react";
 import { IoClose } from "react-icons/io5"; // Import close icon from react-icons
-import {Link} from "react-router-dom"
+import { Link as ScrollLink } from "react-scroll"; // Import from react-scroll
 
 function Navigation() {
   const [isOpen, setIsOpen] = useState(false); // State to manage the menu toggle
@@ -40,29 +40,35 @@ function Navigation() {
         {/* Navigation Menu (for large screens) */}
         <div className="hidden md:flex justify-between items-center w-full md:w-auto">
           <ul className="flex flex-row gap-4">
-          <Link to="#home">
-           <li className="w-20 h-8 px-2 md:bg-gray-200 flex justify-center items-center rounded-xl font-bold">
-             Home
-            </li></Link> 
-            <Link to="#projects">
-            <li className="w-20 h-8 px-4 md:bg-gray-100 flex justify-center items-center rounded-xl md:hover:bg-gray-200 md:active:bg-gray-100 text-gray-600">
-              Projects
-            </li>
-            </Link>
-           <Link to="#services">
-           <li className="w-20 h-8 px-4 md:bg-gray-100 flex justify-center items-center rounded-xl md:hover:bg-gray-200 md:active:bg-gray-100 text-gray-600">
-              Services
-            </li>
-           </Link> 
-           <Link to="#clients">
-           <li className="w-20 h-8 px-4 md:bg-gray-100 flex justify-center items-center rounded-xl md:hover:bg-gray-200 md:active:bg-gray-100 text-gray-600">
-             Clients
-            </li></Link>
-            
-           <Link to="#home">
-            <li className="w-20 h-8 px-4 md:bg-gray-100 flex justify-center items-center rounded-xl md:hover:bg-gray-200 md:active:bg-gray-100 text-gray-600">
-             Vacancy
-            </li></Link>
+            <ScrollLink to="home" smooth={true} duration={500}>
+              <li className="w-20 h-8 px-2 md:bg-gray-200 flex justify-center items-center rounded-xl font-bold">
+                Home
+              </li>
+            </ScrollLink>
+
+            <ScrollLink to="projects" smooth={true} duration={500}>
+              <li className="w-20 h-8 px-4 md:bg-gray-100 flex justify-center items-center rounded-xl md:hover:bg-gray-200 md:active:bg-gray-100 text-gray-600">
+                Projects
+              </li>
+            </ScrollLink>
+
+            <ScrollLink to="services" smooth={true} duration={500}>
+              <li className="w-20 h-8 px-4 md:bg-gray-100 flex justify-center items-center rounded-xl md:hover:bg-gray-200 md:active:bg-gray-100 text-gray-600">
+                Services
+              </li>
+            </ScrollLink>
+
+            <ScrollLink to="clients" smooth={true} duration={500}>
+              <li className="w-20 h-8 px-4 md:bg-gray-100 flex justify-center items-center rounded-xl md:hover:bg-gray-200 md:active:bg-gray-100 text-gray-600">
+                Clients
+              </li>
+            </ScrollLink>
+
+            <ScrollLink to="home" smooth={true} duration={500}>
+              <li className="w-20 h-8 px-4 md:bg-gray-100 flex justify-center items-center rounded-xl md:hover:bg-gray-200 md:active:bg-gray-100 text-gray-600">
+                Vacancy
+              </li>
+            </ScrollLink>
           </ul>
         </div>
 
@@ -78,34 +84,37 @@ function Navigation() {
       <div
         className={`fixed top-0 left-0 w-64 h-full bg-white shadow-lg z-30 transform ${isOpen ? "translate-x-0" : "-translate-x-full"} transition-transform duration-200 md:hidden`}
       >
-       
-
         {/* Sidebar Menu */}
         <ul className="flex flex-col items-center justify-center gap-6 pt-20">
-       <Link to="#home">
-        <li className="w-full py-2 text-center text-md font-bold ">
-           Home
-          </li>
-       </Link>  
-          <Link to="#projects">
-          <li className="w-full py-2 text-center text-md font-bold  hover:bg-gray-200">
-           Projects
-          </li></Link>
-         <Link to="#services">
-          <li className="w-full py-2 text-center text-md font-bold  hover:bg-gray-200">
-            Services
-          </li>
-         </Link>
-         <Link to="#clients">
-          <li className="w-full py-2 text-center text-md font-bold hover:bg-gray-200">
-           Clients
-          </li></Link>
-         
-         <Link to="#home">
-          <li className="w-full py-2 text-center text-md font-bold  hover:bg-gray-200">
-            Vacancy
-          </li>
-         </Link>
+          <ScrollLink to="home" smooth={true} duration={500}>
+            <li className="w-full py-2 text-center text-md font-bold">
+              Home
+            </li>
+          </ScrollLink>
+
+          <ScrollLink to="projects" smooth={true} duration={500}>
+            <li className="w-full py-2 text-center text-md font-bold hover:bg-gray-200">
+              Projects
+            </li>
+          </ScrollLink>
+
+          <ScrollLink to="services" smooth={true} duration={500}>
+            <li className="w-full py-2 text-center text-md font-bold hover:bg-gray-200">
+              Services
+            </li>
+          </ScrollLink>
+
+          <ScrollLink to="clients" smooth={true} duration={500}>
+            <li className="w-full py-2 text-center text-md font-bold hover:bg-gray-200">
+              Clients
+            </li>
+          </ScrollLink>
+
+          <ScrollLink to="home" smooth={true} duration={500}>
+            <li className="w-full py-2 text-center text-md font-bold hover:bg-gray-200">
+              Vacancy
+            </li>
+          </ScrollLink>
         </ul>
       </div>
     </div>
