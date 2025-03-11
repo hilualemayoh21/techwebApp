@@ -1,5 +1,6 @@
 import React from 'react'
 import logotext from "../assets/Images/logotext.jpg"
+import { Link as ScrollLink } from "react-scroll"; 
 function Footer() {
   return (
     <div className="md:mt-[3em] mt-[2em]">
@@ -28,11 +29,11 @@ function Footer() {
             </div>
              <h3 className=" text-[#cbc8d3] md:text-xl text-sm font-bold translate-y-4">Company</h3>
              <div className="flex items-center gap-2 ">
-                <h5 className="rounded-full bg-white px-1 py-1 flex items-center justify-center text-[6px] md:text-lg">Home</h5>
-                <h5 className="rounded-full bg-white px-2 py-1 flex items-center justify-center text-[6px] md:text-lg ">Projects</h5>
-                <h5 className="rounded-full bg-white px-2 py-1 flex items-center justify-center text-[6px] md:text-lg ">Services</h5>
-                <h5 className="rounded-full bg-white px-1 py-1 flex items-center justify-center text-[6px] md:text-lg">Clients</h5>
-                <h5 className="rounded-full bg-white px-1 py-1 flex items-center justify-center text-[6px] md:text-lg">Vacancy</h5>
+                <ScrollLink to="home" smooth={true} duration={500}><h5 className="rounded-full bg-white px-1 py-1 flex items-center justify-center text-[6px] md:text-lg">Home</h5></ScrollLink> 
+                <ScrollLink to="home" smooth={true} duration={500}><h5 className="rounded-full bg-white px-2 py-1 flex items-center justify-center text-[6px] md:text-lg ">Projects</h5></ScrollLink> 
+                <ScrollLink to="home" smooth={true} duration={500}><h5 className="rounded-full bg-white px-2 py-1 flex items-center justify-center text-[6px] md:text-lg ">Services</h5></ScrollLink>
+                <ScrollLink to="home" smooth={true} duration={500}><h5 className="rounded-full bg-white px-1 py-1 flex items-center justify-center text-[6px] md:text-lg">Clients</h5></ScrollLink>
+                <ScrollLink to="home" smooth={true} duration={500}><h5 className="rounded-full bg-white px-1 py-1 flex items-center justify-center text-[6px] md:text-lg">Vacancy</h5></ScrollLink>
                 
             </div>
         </div>

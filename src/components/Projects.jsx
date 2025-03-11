@@ -16,7 +16,7 @@ function Projects() {
     }, 500);
   };
   return (
-    <div className="md:mx-[8em]  mx-[14%] my-12">
+    <div className="md:mx-[8em]  mx-[18%] my-12">
     <div className={`flex  items-center justify-center mb-6 `} >
          <h3 className="md:text-4xl text-[14px] " >Explore Our Latest Projects</h3>
   <div className="relative inline-block ml-auto items-center ">
@@ -47,7 +47,7 @@ function Projects() {
     </div>
      <div className={` w-[240px] h-[170px] ${ isShaking[4] ? "animate-shake-both" : ""} cursor-pointer mb-2 `}onClick={()=>handleCartClick(4)}>
         <img src={realstatepro3} className="w-full h-full rounded-xl object-cover"/>
-        <h3 className="md:text-lg text-md font-bold text-[#3a3645]">ACE Property Finder</h3>
+        <h3 className="md:text-lg text-md font-bold text-[#3a3645] ">ACE Finder</h3>
         <p className="text-[#666668]">Real estate agent website</p>
     </div>
     </div>

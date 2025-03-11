@@ -53,42 +53,40 @@ function Home() {
             <img src={programmerimage} className="h-full w-full rounded-full border-1 border-[#f59c7a]" />
           </div>
           <p className="px-[2em] text-[#9c9b9e] mt-[79px] md:mt-[3em] lg:mt-[12px]">Little Programmer -<span className="text-sm text-[#cbc8d3]">The perfect place <br />to bring your idea to life</span></p>
-          <div className="relative w-[calc(100vw-12px)] h-[180px] md:h-[300px] lg:h-[380px] my-[3em] md:my-[7em] rounded-2xl mx-[12px] hidden md:flex">
-            <img src={honeybeeshape} className="w-full h-full rounded-2xl object-cover" />
+<div className="relative hidden sm:flex w-full h-[250px] md:h-[300px] lg:h-[280px] my-6 md:my-10 rounded-2xl px-4 md:px-8 items-center">
+  {/* Background Image */}
+  <img src={honeybeeshape} className="absolute inset-0 w-full h-full rounded-2xl object-cover" alt="Background" />
+  
+  {/* Dark Overlay */}
+  <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-black rounded-2xl"></div>
+  
+  {/* Content Wrapper - Proportional Top & Bottom Padding */}
+  <div className="absolute inset-0 flex flex-col md:flex-row items-center md:items-start justify-center px-4 md:px-8 py-[5vh] lg:pt-[6vh] lg:pb-[4vh]">
+    
+    {/* Left Section - Circular SVG & Logo */}
+    <div className="flex flex-col items-center md:items-start w-1/3 md:gap-0 lg:gap-2">
+      <svg className="w-1/2 md:w-2/3 lg:w-1/2" viewBox="0 0 250 250" height="140">
+        <path id="curve" d="M 125, 45 A 75,75 0 1,1 124.9,45" />
+        <text className="text">
+          <textPath href="#curve"> KNOW MORE ABOUT US • KNOW MORE ABOUT US • </textPath>
+        </text>
+        <image href={logotext} x="70" y="70" width="80" height="80" className="rounded-full" />
+      </svg>
 
-            <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-black rounded-lg"></div>
+      {/* Button */}
+      <button className="w-auto px-4 py-2 text-sm md:text-base bg-orange-500 rounded-xl text-white mt-4 hover:bg-orange-400 active:bg-orange-300">
+        Have a project idea
+      </button>
+    </div>
 
-            <div className="absolute lg:top-[3em] top-5 md:left-[2em]">
-              <div className="flex gap-2">
-                <div className="lg:-translate-x-12 md:-translate-x-8 w-[800px]">
-                  <svg className="w-1/6 md:w-1/2 lg:w-full xl:w-full" viewBox="0 0 250 250" height="200">
-                    <path id="curve" d="M 125, 45 A 75,75 0 1,1 124.9,45" />
-                    <text className="text">
-                      <textPath href="#curve">
-                        KNOW MORE ABOUT US • KNOW MORE ABOUT US •
-                      </textPath>
-                    </text>
-                    <image href={logotext} x="70" y="70" width="98" height="98" className="rounded-full" />
-                    <defs>
-                      <clipPath id="clipCircle">
-                        <circle cx="125" cy="125" r="50" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-
-                  <button className="md:px-3 py-[6px] md:text-[12px] lg:text-[14px] lg:translate-y-2 md:translate-y-0 md:-translate-x-2 lg:translate-x-4 bg-orange-500 rounded-xl text-white md:mx-8 hover:bg-orange-400 active:bg-orange-300">
-                    Have a project idea
-                  </button>
-                </div>
-                <h3 className="text-[6px] md:text-[18px] lg:text-[24px] md:mt-3 text-white md:pr-10 break-words lg:translate-0 md:-translate-x-[8em] md:translate-y-6">
-                  Delivering innovative solutions with creativity that goes beyond boundaries. We strive to provide the best service with ideas that are out of the box, ensuring high-quality results that stand out. Each project is crafted with precision, user-centric design, and cutting-edge technology to create impactful and efficient solutions.
-                </h3>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
+    {/* Right Section - Text (Occupies Remaining Space) */}
+    <h3 className="w-2/3 text-sm md:text-base lg:text-lg text-white text-left leading-tight md:leading-normal px-4 md:px-8 lg:pt-[2em]">
+      Delivering innovative solutions with creativity that goes beyond boundaries. We strive to provide the best service with ideas that are out of the box, ensuring high-quality results that stand out. Each project is crafted with precision, user-centric design, and cutting-edge technology to create impactful and efficient solutions.
+    </h3>
+  </div>
+</div>
+</div>
+ </section>
 
       {/* Projects Section */}
       <section id="projects">
@@ -112,7 +110,10 @@ function Home() {
       </section>
 
       {/* Contact Us and Footer */}
-      <ContactUs />
+      <section id="contactus">
+          <ContactUs />
+      </section>
+    
       <Footer />
     </div>
   );
