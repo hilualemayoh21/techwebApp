@@ -36,9 +36,9 @@ function Navigation() {
         />
       )}
 
-      <div className={`flex  items-center mx-auto px-14 transition-all duration-200 ${isFixed ? "fixed top-0 left-0 right-0 z-50 bg-white shadow-md py-2 " :""}  `}>
+    <div className={`flex  items-center mx-auto  sm:px-12 md:px-[15%] lg:px-14 px-12  transition-all duration-200 ${isFixed ? "fixed top-0 left-0 right-0 z-50 bg-white shadow-md py-2 " :""}  `}>
         {/* Logo */}
-        <div className='inline-flex '>
+        <div className='inline-flex md:mr-2 lg:mr-0 '>
           <img src={logo} className="md:w-[6em] md:h-[6em] w-[4em] h-[4em] pt-2 object-cover" alt="Logo" />
           
         </div>
