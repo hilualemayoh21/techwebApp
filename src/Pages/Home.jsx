@@ -18,22 +18,22 @@ function Home() {
     <div className='relative w-full min-h-screen'>
       <section id="home">
         <div className="">
-          {/* Left Vertical Line */}
+          {/* Left Vertical Line
           <div className="absolute top-0 left-0 w-[0.7px] h-full bg-gray-300 ml-3"></div>
           {/* Right Vertical Line */}
-          <div className="absolute top-0 right-0 w-[1px] h-full bg-gray-300 mr-3"></div>
+          {/* <div className="absolute top-0 right-0 w-[1px] h-full bg-gray-300 mr-3"></div> */} 
 
           <Navigation />
-          <hr className="w-[calc(100vw-12px)] mb-2 border-t-[1.3px] border-gray-300 mx-[12px]" />
+          {/* <hr className="w-[calc(100vw-12px)] mb-2 border-t-[1.3px] border-gray-300 mx-[12px]" /> */}
 
           {/* Home Section */}
-          <div className="flex justify-between mx-[12px] relative">
-            <div className="lg:translate-y-8 -rotate-8 lg:translate-x-32 translate-x-4 translate-y-2 md:translate-x-12 md:translate-y-4">
+          <div className="flex justify-between mx-[12px] relative mt-[2em]">
+            <div className="lg:translate-y-8 -rotate-8 lg:translate-x-34 translate-x-4 translate-y-2 md:translate-x-12 md:translate-y-4">
               <img src={chiefimage} className="lg:w-[200px] w-[100px] h-[140px] lg:h-[200px] md:w-[180px] md:h-[180px] hue-rotate-4 brightness-100 border-2 border-white shadow-lg shadow-red-900/12 shadow-b-2 shadow-r-[1px] -shadow-spread-1" />
             </div>
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-10">
-              <div className="mt-[4em] md:mt-[1em] lg:mt-16 md:w-[250px] ml-18 md:ml-0 w-[130px] h-[30px] bg-[#f4794f] lg:mb-0 md:mb-6 mb-2 rounded-xl pl-1 flex justify-center items-center">
-                <p className="w-full h-full rounded-xl bg-[#e0dceb] py-1 md:text-[14px] text-[8px] text-[#9e95b4]">🔥100% TRUSTED PLATFORM</p>
+              <div className="mt-[4em] md:mt-[1em] lg:mt-14 md:w-[250px] lg:w-[270px]  ml-18 md:ml-0 w-[130px] h-[30px] bg-[#f4794f] lg:mb-4 md:mb-6 mb-2 rounded-xl pl-1 flex justify-center items-center">
+                <p className="w-full h-full rounded-xl bg-[#e0dceb] flex items-center justify-center md:text-[14px] text-[8px] text-[#9e95b4]">🔥100% TRUSTED PLATFORM</p>
               </div>
               <div className='bg-white opacity-[0.2] w-12'></div>
               <h1 className="lg:text-7xl font-bold mx-[3em] pr-[1em] leading-relaxed lg:leading-tight md:text-4xl text-[15px] text-[#3a3645] md:px-2">
@@ -44,7 +44,7 @@ function Home() {
                 Excellence
               </h1>
             </div>
-            <div className='lg:translate-y-49 rotate-6 w-[120px] lg:w-[300px] md:w-[200px] md:-translate-x-14 lg:-translate-x-12 md:translate-y-37 -translate-x-7 translate-y-30'>
+            <div className='lg:translate-y-49 rotate-6 w-[120px] lg:w-[300px] md:w-[200px] md:-translate-x-16 lg:-translate-x-12 md:translate-y-37 -translate-x-7 translate-y-30'>
               <img src={realstateImage} className="brightness-100" />
             </div>
           </div>
@@ -53,19 +53,19 @@ function Home() {
             <img src={programmerimage} className="h-full w-full rounded-full border-1 border-[#f59c7a]" />
           </div>
           <p className="px-[2em] text-[#9c9b9e] mt-[79px] md:mt-[3em] lg:mt-[12px]">Little Programmer -<span className="text-sm text-[#cbc8d3]">The perfect place <br />to bring your idea to life</span></p>
-<div className="relative hidden sm:flex w-full h-[250px] md:h-[300px] lg:h-[280px] my-6 md:my-10 rounded-2xl px-4 md:px-8 items-center">
+<div className="relative hidden sm:flex w-full h-[250px] md:h-[300px] lg:h-[280px] my-6 md:my-10 rounded-2xl px-4 md:px-6 items-center">
   {/* Background Image */}
   <img src={honeybeeshape} className="absolute inset-0 w-full h-full rounded-2xl object-cover" alt="Background" />
   
   {/* Dark Overlay */}
   <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-black rounded-2xl"></div>
   
-  {/* Content Wrapper - Proportional Top & Bottom Padding */}
-  <div className="absolute inset-0 flex flex-col md:flex-row items-center md:items-start justify-center px-4 md:px-8 py-[5vh] lg:pt-[6vh] lg:pb-[4vh]">
+  {/* Content Wrapper - Adjusting for Medium Screens */}
+  <div className="absolute inset-0 flex flex-col md:flex-row items-center md:items-start justify-center px-4 md:px-6 lg:px-8 py-[5vh] lg:pt-[6vh] lg:pb-[4vh]">
     
-    {/* Left Section - Circular SVG & Logo */}
-    <div className="flex flex-col items-center md:items-start w-1/3 md:gap-0 lg:gap-2">
-      <svg className="w-1/2 md:w-2/3 lg:w-1/2" viewBox="0 0 250 250" height="140">
+    {/* Left Section - Adjust for Medium Screens */}
+    <div className="flex flex-col items-center md:items-start w-full sm:w-2/5 md:w-1/3 lg:w-1/3 md:gap-2">
+      <svg className="w-1/2 md:w-3/4 lg:w-2/3" viewBox="0 0 250 250" height="120">
         <path id="curve" d="M 125, 45 A 75,75 0 1,1 124.9,45" />
         <text className="text">
           <textPath href="#curve"> KNOW MORE ABOUT US • KNOW MORE ABOUT US • </textPath>
@@ -73,18 +73,19 @@ function Home() {
         <image href={logotext} x="70" y="70" width="80" height="80" className="rounded-full" />
       </svg>
 
-      {/* Button */}
-      <button className="w-auto px-4 py-2 text-sm md:text-base bg-orange-500 rounded-xl text-white mt-4 hover:bg-orange-400 active:bg-orange-300">
+      {/* Button - Ensure Responsiveness */}
+      <button className="w-auto px-3 py-2 text-xs  lg:ml-12 sm:text-sm md:text-base bg-orange-500 rounded-xl text-white mt-3 sm:mt-2 sm:mb-2 md:mt-4 hover:bg-orange-400 active:bg-orange-300">
         Have a project idea
       </button>
     </div>
 
-    {/* Right Section - Text (Occupies Remaining Space) */}
-    <h3 className="w-2/3 text-sm md:text-base lg:text-lg text-white text-left leading-tight md:leading-normal px-4 md:px-8 lg:pt-[2em]">
+    {/* Right Section - Ensure Text Wraps Well */}
+    <h3 className="w-full sm:w-3/5 md:w-2/3 text-xs sm:text-[9px] md:text-base lg:text-lg text-white text-center md:text-left leading-tight md:leading-normal px-4 md:px-6 lg:pt-[2em]">
       Delivering innovative solutions with creativity that goes beyond boundaries. We strive to provide the best service with ideas that are out of the box, ensuring high-quality results that stand out. Each project is crafted with precision, user-centric design, and cutting-edge technology to create impactful and efficient solutions.
     </h3>
   </div>
 </div>
+
 </div>
  </section>
 

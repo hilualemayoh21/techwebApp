@@ -24,7 +24,7 @@ function AnimatedVideo() {
       </div>
 
       {/* Text Overlay */}
-      <div className="bg-black text-white w-[180px] sm:w-[220px] h-[50px] rounded-xl flex justify-center items-center absolute top-[50%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <div className="bg-black text-white w-[200px] sm:w-[220px] h-[50px] rounded-xl flex justify-center items-center absolute top-[50%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         ANIMATION VIDEO HERE
       </div>
     </div>
